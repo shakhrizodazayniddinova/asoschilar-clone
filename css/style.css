@@ -181,7 +181,7 @@ header{
     padding: 120px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 90px;
     background-image: url('../assets/Background pattern.png');
