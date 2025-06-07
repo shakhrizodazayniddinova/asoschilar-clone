@@ -566,7 +566,7 @@ footer {
     gap: 10px;
 }
 
-.modal-title h3{
+.modal-title h4{
     font-weight: 600;
     font-size: 18px;
     line-height: 140%;
@@ -856,5 +856,11 @@ footer {
     }
     .stats-section{
         gap: 24px;
+    }
+
+    /* modal */
+    .modal{
+        width: 327px;
+        height: 313px;
     }
 }
