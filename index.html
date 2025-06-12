@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +22,9 @@
 
         <nav>
             <ul class="header-ul">
-                <li><a href="#services">Xizmatlar</a></li>
-                <li><a href="#about">Biz xaqimizda</a></li>
-                <li><a href="#projects">Natijalar</a></li>
+                <li><a href="#services" class="header-links">Xizmatlar</a></li>
+                <li><a href="#about" class="header-links">Biz xaqimizda</a></li>
+                <li><a href="#projects" class="header-links">Natijalar</a></li>
             </ul>
         </nav>
 
@@ -34,7 +34,7 @@
     </header>
 
     <!-- main -->
-    <main>
+    <main class="main">
         <!-- hero section -->
         <section class="hero-section">
             <div class="hero-founder-mobile">
@@ -42,11 +42,11 @@
             </div>
 
             <div class="hero-title">
-                <h1>Siz strategiyani o’ylang <br> Tizimni biz hal qilamiz!</h1>
-                <p>Tizimlashtirish orqali har kunlik muammolar bilan ovora bo‘lish o‘rniga, biznesingizni rivojlantirishga vaqt ajrating.</p>
+                <h1 class="hero-title-text">Siz strategiyani o’ylang <br> Tizimni biz hal qilamiz!</h1>
+                <p class="hero-title-description">Tizimlashtirish orqali har kunlik muammolar bilan ovora bo‘lish o‘rniga, biznesingizni rivojlantirishga vaqt ajrating.</p>
 
                 <a href="#contact">
-                    <button class="konsultatsiya-btn">Konsultatsiyaga yozilish</button>
+                    <button class="konsultatsiya-btn hero-konsultatsiya-btn">Konsultatsiyaga yozilish</button>
                 </a>
             </div>
 
@@ -59,17 +59,17 @@
         <!-- logos animation section -->
         <section class="logos-animation">
             <div class="logos-track">
-                <img src="./assets/asoschilar club logo.svg" alt="asoschilar club logo">
-                <img src="./assets/asoschilar logo horizontal color.svg" alt="asoschilar logo horizontal">
-                <img src="./assets/asoschilar events logo c.svg" alt="asoschilar events logo">
+                <img src="./assets/asoschilar club logo.svg" alt="asoschilar club logo" class="logos-animation-img">
+                <img src="./assets/asoschilar logo horizontal color.svg" alt="asoschilar logo horizontal" class="logos-animation-img">
+                <img src="./assets/asoschilar events logo c.svg" alt="asoschilar events logo" class="logos-animation-img">
                 <!-- repeat logos -->
-                <img src="./assets/asoschilar club logo.svg" alt="asoschilar club logo">
-                <img src="./assets/asoschilar logo horizontal color.svg" alt="asoschilar logo horizontal">
-                <img src="./assets/asoschilar events logo c.svg" alt="asoschilar events logo">
+                <img src="./assets/asoschilar club logo.svg" alt="asoschilar club logo" class="logos-animation-img">
+                <img src="./assets/asoschilar logo horizontal color.svg" alt="asoschilar logo horizontal" class="logos-animation-img">
+                <img src="./assets/asoschilar events logo c.svg" alt="asoschilar events logo" class="logos-animation-img">
                 <!-- repeat logos -->
-                <img src="./assets/asoschilar club logo.svg" alt="asoschilar club logo">
-                <img src="./assets/asoschilar logo horizontal color.svg" alt="asoschilar logo horizontal">
-                <img src="./assets/asoschilar events logo c.svg" alt="asoschilar events logo">
+                <img src="./assets/asoschilar club logo.svg" alt="asoschilar club logo" class="logos-animation-img">
+                <img src="./assets/asoschilar logo horizontal color.svg" alt="asoschilar logo horizontal" class="logos-animation-img">
+                <img src="./assets/asoschilar events logo c.svg" alt="asoschilar events logo" class="logos-animation-img">
             </div>
         </section>
 
@@ -82,7 +82,10 @@
                     <p>Xizmatlarimiz</p>
                 </div>
                 
-                <p class="title-text"><span class="tizim-deskop-text">Tizim bo‘lmasa rivojlanish to‘xtab qoladi. <br> </span> Biz sizga quyidagi yo‘nalishlarda amaliy yordam beramiz.</p>
+                <h3 class="title-text">
+                    <span class="tizim-deskop-text">Tizim bo‘lmasa rivojlanish to‘xtab qoladi. <br> </span> 
+                    Biz sizga quyidagi yo‘nalishlarda amaliy yordam beramiz.
+                </h3>
             </div>
 
             <!-- services about items -->
@@ -93,8 +96,9 @@
                     </div>
     
                     <div class="services-item-title">
-                        <p>Umumiy boshqaruvni tizimlashtirish</p>
-                        <ul>
+                        <h3 class="services-item-title-text">Umumiy boshqaruvni tizimlashtirish</h3>
+
+                        <ul class="services-list">
                             <li>Tashkiliy struktura (Org. struktura)</li>
                             <li>Ichki reglamentlar va tartiblar</li>
                             <li>Ish standartlari</li>
@@ -109,7 +113,7 @@
                     </div>
     
                     <div class="services-item-title">
-                        <p>Sotuv bo'limi</p>
+                        <h3 class="services-item-title-text">Sotuv bo'limi</h3>
                         <ul>
                             <li>CRM tizimini biznesingizga moslashtirish</li>
                             <li>Sotuv voronkasini ishlab chiqish</li>
@@ -124,7 +128,7 @@
                     </div>
     
                     <div class="services-item-title">
-                        <p>HR bo’limi</p>
+                        <h3 class="services-item-title-text">HR bo’limi</h3>
                         <ul>
                             <li>Xodimlar uchun aniq reglamentlar</li>
                             <li>KPI asosida oylik tizimi</li>
@@ -140,7 +144,7 @@
                     </div>
     
                     <div class="services-item-title">
-                        <p>Marketing bo’limi</p>
+                        <h3 class="services-item-title-text">Marketing bo’limi</h3>
                         <ul>
                             <li>Notion asosida kontent boshqaruvi</li>
                             <li>Kontent plan bilan ishlash va nazorat tizimi</li>
@@ -154,7 +158,7 @@
                     </div>
     
                     <div class="services-item-title">
-                        <p>Yuridik yordam</p>
+                        <h3 class="services-item-title-text">Yuridik yordam</h3>
                         <ul>
                             <li>Kompaniyani ochish va huquqiy ro‘yxatdan o‘tkazish</li>
                             <li>Xodimlarni rasmiy ishga olish hujjatlari</li>
@@ -175,7 +179,7 @@
                     <p>Bizning qadriyatlarimiz?</p>
                 </div>
 
-                <p class="title-text">Nega aynan biz?</p>
+                <h3 class="title-text">Nega aynan biz?</h3>
             </div>
 
             <div class="about-cards">
@@ -226,7 +230,7 @@
                     <p>Natijalar gapiradi</p>
                 </div>
 
-                <p class="title-text">Amalga oshirilgan loyihalar</p>
+                <h3 class="title-text">Amalga oshirilgan loyihalar</h3>
             </div>
 
             <div class="carousel-container">
@@ -236,27 +240,27 @@
 
                 <div class="carousel-items">
                     <div class="carousel-card">
-                        <img src="./assets/telegram-cloud-photo-size-2-5346211931435954241-x.png" alt="super miya">
-                        <h3>Supermiya</h3>
-                        <p>Xotirani rivojlantirish markazi uchun ichki boshqaruv tartibiga tizim joriy etildi.</p>
+                        <img src="./assets/telegram-cloud-photo-size-2-5346211931435954241-x.png" alt="super miya" class="carousel-img">
+                        <h3 class="carousel-title">Supermiya</h3>
+                        <p class="carousel-description">Xotirani rivojlantirish markazi uchun ichki boshqaruv tartibiga tizim joriy etildi.</p>
                     </div>
 
                     <div class="carousel-card">
-                        <img src="./assets/telegram-cloud-photo-size-2-5346211931435954241-x (1).png" alt="super miya">
-                        <h3>Print Well</h3>
-                        <p>Yirik tipografiya markazi. Rglamentsiz muhitdan to‘liq CRM va hisobotli tizimga o‘tildi.</p>
+                        <img src="./assets/telegram-cloud-photo-size-2-5346211931435954241-x (1).png" alt="super miya" class="carousel-img">
+                        <h3 class="carousel-title">Print Well</h3>
+                        <p class="carousel-description">Yirik tipografiya markazi. Rglamentsiz muhitdan to‘liq CRM va hisobotli tizimga o‘tildi.</p>
                     </div>
 
                     <div class="carousel-card">
-                        <img src="./assets/telegram-cloud-photo-size-2-5346211931435954241-x.png" alt="super miya">
-                        <h3>Supermiya</h3>
-                        <p>Xotirani rivojlantirish markazi uchun ichki boshqaruv tartibiga tizim joriy etildi.</p>
+                        <img src="./assets/telegram-cloud-photo-size-2-5346211931435954241-x.png" alt="super miya" class="carousel-img">
+                        <h3 class="carousel-title">Supermiya</h3>
+                        <p class="carousel-description">Xotirani rivojlantirish markazi uchun ichki boshqaruv tartibiga tizim joriy etildi.</p>
                     </div>
 
                     <div class="carousel-card">
-                        <img src="./assets/telegram-cloud-photo-size-2-5346211931435954241-x (1).png" alt="super miya">
-                        <h3>Print Well</h3>
-                        <p>Yirik tipografiya markazi. Rglamentsiz muhitdan to‘liq CRM va hisobotli tizimga o‘tildi.</p>
+                        <img src="./assets/telegram-cloud-photo-size-2-5346211931435954241-x (1).png" alt="super miya" class="carousel-img">
+                        <h3 class="carousel-title">Print Well</h3>
+                        <p class="carousel-description">Yirik tipografiya markazi. Rglamentsiz muhitdan to‘liq CRM va hisobotli tizimga o‘tildi.</p>
                     </div>
                 </div>
 
@@ -268,24 +272,24 @@
 
         <!-- stats section -->
         <section class="stats-section">
-            <p class="title-text about-title">Biz raqamlarga ishonamiz!</p>
+            <h3 class="title-text about-title">Biz raqamlarga ishonamiz!</h3>
 
             <div class="stats-grid-box">
                 <div class="stats-card">
-                    <h3>10+</h3>
-                    <p>Muvaffaqiyatli yakunlangan loyihalarimiz</p>
+                    <h3 class="stats-card-title">10+</h3>
+                    <p class="stats-card-description">Muvaffaqiyatli yakunlangan loyihalarimiz</p>
                 </div>
                 <div class="stats-card">
-                    <h3>2 yil+</h3>
-                    <p>Loyihalar bilan ishlashda tajriba</p>
+                    <h3 class="stats-card-title">2 yil+</h3>
+                    <p class="stats-card-description">Loyihalar bilan ishlashda tajriba</p>
                 </div>
                 <div class="stats-card">
-                    <h3>5 yil</h3>
-                    <p>Boshqaruv bo’yicha real loyihalarda tajriba</p>
+                    <h3 class="stats-card-title">5 yil</h3>
+                    <p class="stats-card-description">Boshqaruv bo’yicha real loyihalarda tajriba</p>
                 </div>
                 <div class="stats-card">
-                    <h3>6</h3>
-                    <p>Tajribali mutaxasislardan tashkil topgan jamoa</p>
+                    <h3 class="stats-card-title">6</h3>
+                    <p class="stats-card-description">Tajribali mutaxasislardan tashkil topgan jamoa</p>
                 </div>
             </div>
 
@@ -303,34 +307,34 @@
                     <p>Fikrlar</p>
                 </div>
                 
-                <p class="title-text">Mijozlardan samimiy fikrlar</p>
+                <h3 class="title-text">Mijozlardan samimiy fikrlar</h3>
             </div>
 
             <div class="comments-box services-items-box">
                 <div class="comments-card">
-                    <img src="./assets/image (4).png" alt="customer">
+                    <img src="./assets/image (4).png" alt="customer" class="comments-card-customer">
 
                     <div class="comments-card-title">
-                        <h3>“Biznesimda kim nima qilayotgani aniq bo‘ldi. Hozir har kim mas’uliyatini biladi.”</h3>
-                        <p>— G’ulomjon Mansurov, Print Well kompaniyasi asoschisi</p>
+                        <h3 class="comment">“Biznesimda kim nima qilayotgani aniq bo‘ldi. Hozir har kim mas’uliyatini biladi.”</h3>
+                        <p class="comment-author">— G’ulomjon Mansurov, Print Well kompaniyasi asoschisi</p>
                     </div>
                 </div>
 
                 <div class="comments-card">
-                    <img src="./assets/image (5).png" alt="customer">
+                    <img src="./assets/image (5).png" alt="customer" class="comments-card-customer">
 
                     <div class="comments-card-title">
-                        <h3>“Biznesimda kim nima qilayotgani aniq bo‘ldi. Hozir har kim mas’uliyatini biladi.”</h3>
-                        <p>— Abdulloh Yusupov, Dodo kids kompaniyasi asoschisi</p>
+                        <h3 class="comment">“Biznesimda kim nima qilayotgani aniq bo‘ldi. Hozir har kim mas’uliyatini biladi.”</h3>
+                        <p class="comment-author">— Abdulloh Yusupov, Dodo kids kompaniyasi asoschisi</p>
                     </div>
                 </div>
 
                 <div class="comments-card">
-                    <img src="./assets/image (6).png" alt="customer">
+                    <img src="./assets/image (6).png" alt="customer" class="comments-card-customer">
 
                     <div class="comments-card-title">
-                        <h3>“Biznesimda kim nima qilayotgani aniq bo‘ldi. Hozir har kim mas’uliyatini biladi.”</h3>
-                        <p>— Sherzod Darxonov, Foggi do’konlari CEO’si</p>
+                        <h3 class="comment">“Biznesimda kim nima qilayotgani aniq bo‘ldi. Hozir har kim mas’uliyatini biladi.”</h3>
+                        <p class="comment-author">— Sherzod Darxonov, Foggi do’konlari CEO’si</p>
                     </div>
                 </div>
 
@@ -347,22 +351,22 @@
                     <p>Biz bilan bog’laning</p>
                 </div>
                 
-                <p class="title-text">Konsultatsiyaga yoziling va biznesingizni tizimlashtiring</p>
+                <h3 class="title-text">Konsultatsiyaga yoziling va biznesingizni tizimlashtiring</h3>
             </div>
 
             <form class="contact-form" id="contact-form">
                 <div class="form-container">
                     <div class="form-group">
-                        <label for="name">Ism</label>
-                        <input type="text" id="name" placeholder="To‘liq ismingiz" required/>
+                        <label for="name" class="contact-label">Ism</label>
+                        <input type="text" id="name" class="contact-input" placeholder="To‘liq ismingiz" required/>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Telefon raqam</label>
-                        <input type="tel" id="phone" placeholder="+998 _ _ ___ __ __" required/>
+                        <label for="phone" class="contact-label">Telefon raqam</label>
+                        <input type="tel" id="phone" class="contact-input" placeholder="+998 _ _ ___ __ __" required/>
                     </div>
                     <div class="form-group">
-                        <label for="company">Kompaniyangiz</label>
-                        <input type="text" id="company" placeholder="Kompaniya nomi" required/>
+                        <label for="company" class="contact-label">Kompaniyangiz</label>
+                        <input type="text" id="company" class="contact-input" placeholder="Kompaniya nomi" required/>
                     </div>
                 </div>
 
@@ -374,9 +378,9 @@
         <div class="modal-overlay" id="modal">
             <div class="modal">
                 <img src="./assets/tick-circle.svg" alt="check">
-                <div class="modal-title">
-                    <h4>Konsultatsiyaga muvaffaqiyatli yozildingiz!</h4>
-                    <p>Operatorlar 24 soat ichida siz bilan bog’lanishadi.</p>
+                <div class="modal-title-box">
+                    <h4 class="modal-title">Konsultatsiyaga muvaffaqiyatli yozildingiz!</h4>
+                    <p class="modal-description">Operatorlar 24 soat ichida siz bilan bog’lanishadi.</p>
                 </div>
                 <button class="konsultatsiya-btn center-contact-konsultatsiya-btn" id="close-modal-btn">Bosh sahifaga qaytish</button>
             </div>
@@ -384,7 +388,7 @@
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer class="footer">
         <div class="footer-section">
             <div class="footer-logo">
                 <img src="./assets/Logo.svg" alt="logo">
@@ -393,29 +397,35 @@
         </div>
 
         <div class="footer-links-container">
-            <div class="footer-links">
+            <div class="footer-links-box">
                 <h4 class="footer-title">Linklar</h4>
-                <ul>
-                    <li><a href="#about">Biz haqimizda</a></li>
-                    <li><a href="#services">Xizmatlar</a></li>
-                    <li><a href="#contact">Konsultatsiya</a></li>
+                <ul class="footer-links-list">
+                    <li class="footer-links-li">
+                        <a href="#about" class="footer-links-text">Biz haqimizda</a>
+                    </li>
+                    <li class="footer-links-li">
+                        <a href="#services" class="footer-links-text">Xizmatlar</a>
+                    </li>
+                    <li class="footer-links-li">
+                        <a href="#contact" class="footer-links-text">Konsultatsiya</a>
+                    </li>
                 </ul>
             </div>
     
-            <div class="footer-links">
+            <div class="footer-links-box">
                 <h4 class="footer-title">Bog‘lanish</h4>
-                <ul>
-                    <li>
+                <ul class="footer-links-list">
+                    <li class="footer-links-li">
                         <img src="./assets/call-calling.svg" alt="call calling">
-                        <a href="tel:+998998427979">+998 99 842 79 79</a>
+                        <a href="tel:+998998427979" class="footer-links-text">+998 99 842 79 79</a>
                     </li>
-                    <li>
+                    <li class="footer-links-li">
                         <img src="./assets/sms.svg" alt="sms">
-                        <a href="mailto:info@asoschilar.uz">info@asoschilar.uz</a>
+                        <a href="mailto:info@asoschilar.uz" class="footer-links-text">info@asoschilar.uz</a>
                     </li>
-                    <li>
+                    <li class="footer-links-li">
                         <img src="./assets/send-2.svg" alt="send">
-                        <a href="https://t.me/asoschilarniki_bot" target="_blank">@asoschilar_bot</a>
+                        <a href="https://t.me/asoschilarniki_bot" target="_blank" class="footer-links-text">@asoschilar_bot</a>
                     </li>
                 </ul>
             </div>

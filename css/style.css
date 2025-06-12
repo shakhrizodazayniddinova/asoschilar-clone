@@ -7,7 +7,7 @@
 
 
 /* header styles */
-header{
+.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -34,7 +34,7 @@ header{
     gap: 24px;
     list-style: none;
 }
-.header-ul a{
+.header-links{
     text-decoration: none;
     color: #000000;
     font-weight: 700;
@@ -61,6 +61,9 @@ header{
 
 
 /* main styles */
+.main{
+    margin: 0 auto;
+}
 
 /* global styles in main */
 .title-text{
@@ -121,11 +124,11 @@ header{
     flex-direction: column;
     gap: 12px;
 }
-.hero-title button{
+.hero-konsultatsiya-btn{
     height: 48px;
     margin-top: 28px;
 }
-.hero-title h1{
+.hero-title-text{
     font-size: 48px;
 }
 .hero-founder-deskop{
@@ -214,13 +217,13 @@ header{
     flex-direction: column;
     gap: 15px;
 }
-.services-item-title p{
+.services-item-title-text{
     font-weight: 590;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.6%;
 }
-.services-item-title ul{
+.services-list{
     margin-left: 20px;
     color: #334155;
     font-weight: 400;
@@ -321,17 +324,17 @@ header{
     gap: 8px;
     flex-shrink: 0;
 }
-.carousel-card img{
+.carousel-img{
     max-width: 512px;
     object-fit: cover;
 }
-.carousel-card h3{
+.carousel-title{
     font-weight: 590;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.6%;
 }
-.carousel-card p{
+.carousel-description{
     font-size: 16px;
     line-height: 28px;
 }
@@ -369,13 +372,13 @@ header{
     flex-direction: column;
     gap: 8px;
 }
-.stats-card h3{
+.stats-card-title{
     font-weight: 590;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.6%;
 }
-.stats-card p{
+.stats-card-description{
     color: #334155;
     line-height: 28px;
 }
@@ -394,19 +397,19 @@ header{
 .comments-card:nth-child(3){
     border-bottom: none;
 }
-.comments-card img{
+.comments-card-customer{
     width: 80px;
     height: 80px;
     border-radius: 20px;
     object-fit: contain;
 }
-.comments-card-title h3{
+.comment{
     font-weight: 590;
     font-size: 24px;
     line-height: 150%;
     letter-spacing: -0.6%;
 }
-.comments-card p{
+.comment-author{
     color: #334155;
     line-height: 28px;
     margin-top: 8px;
@@ -445,14 +448,14 @@ header{
     gap: 24px;
 }
 
-label {
+.contact-label {
     display: block;
     font-size: 14px;
     color: #555;
     margin-bottom: 6px;
 }
 
-input {
+.contact-input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -461,7 +464,7 @@ input {
     outline: none;
 }
 
-input::placeholder {
+.contact-input::placeholder {
     color: #ccc;
 }
 
@@ -472,7 +475,7 @@ input::placeholder {
 
 
 /* footer styles */
-footer {
+.footer {
     background-color: #f3f3fb;
     padding: 40px 120px;
     display: flex;
@@ -491,27 +494,27 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-.footer-links-container ul{
+.footer-links-list{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.footer-links-container ul a{
+.footer-links-text{
     text-decoration: none;
     color: #475569;
     font-size: 14px;
 }
 
-.footer-links-container li{
+.footer-links-li{
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 
-.footer-links {
+.footer-links-box {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -560,7 +563,7 @@ footer {
     justify-content: center;
     gap: 24px;
 }
-.modal-title{
+.modal-title-box{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -568,14 +571,14 @@ footer {
     gap: 10px;
 }
 
-.modal-title h4{
+.modal-title{
     font-weight: 600;
     font-size: 18px;
     line-height: 140%;
     letter-spacing: -0.2px;
 }
 
-.modal-title p{
+.modal-description{
     color: #818B9C;
     font-size: 12px;
     line-height: 160%;
@@ -595,7 +598,7 @@ footer {
         padding: 0px 50px;
     }
 
-    .hero-title h1{
+    .hero-title-text{
         font-size: 30px;
     }
 
@@ -651,7 +654,7 @@ footer {
     }
 
     /* footer */
-    footer{
+    .footer{
         padding: 30px 80px;
     }
     .footer-links-container{
@@ -678,7 +681,7 @@ footer {
     }
 
     /* footer */
-    footer{
+    .footer{
         gap: 36px;
     }
     .footer-section{
@@ -689,14 +692,14 @@ footer {
         flex-direction: column;
         gap: 36px;
     }
-    .footer-links{
+    .footer-links-box{
         gap: 12px;
     }
 }
 
 @media (max-width: 600px) {
     /* header */
-    header{
+    .header{
         padding: 16px 80px;
     }
 
@@ -717,11 +720,11 @@ footer {
         gap: 40px;
     }
 
-    .hero-title h1{
+    .hero-title-text{
         font-size: 26px;
         line-height: 150%;
     }
-    .hero-title p{
+    .hero-title-description{
         font-size: 14px;
     }
 
@@ -749,14 +752,14 @@ footer {
         align-items: start;
     }
 
-    .comments-card img{
+    .comments-card-customer{
         width: 56px;
         height: 56px;
     }
-    .comments-card-title h3{
+    .comment{
         font-size: 16px;
     }
-    .carousel-card p{
+    .comment-author{
         font-size: 14px;
     }
     .comments-box{
@@ -766,14 +769,14 @@ footer {
     }
 
     /* footer */
-    footer{
+    .footer{
         padding: 40px 24px;
     }
 }
 
 @media (max-width: 500px) {
     /* header */
-    header{
+    .header{
         padding: 16px 20px;
         justify-content: space-between;
         align-items: center;
@@ -802,7 +805,7 @@ footer {
     .logos-track{
         gap: 50px;
     }
-    .logos-track img{
+    .logos-animation-img{
         width: 55px;
     }
     .services{
@@ -822,10 +825,10 @@ footer {
         letter-spacing: -0.5%;
 
     }
-    .services-item-title p{
+    .services-item-title-text{
         font-size: 18px;
     }
-    .services-item-title ul{
+    .services-list{
         font-size: 14px;
         line-height: 24px;
     }
